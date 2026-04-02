@@ -1,6 +1,6 @@
 def calculate_cost(X, T):
 
-    if X <= 0 or (T != 1 and T != 2):
+    if X <= 0:
         raise ValueError("Invalid")
     
     if T == 1:  # Xe máy Xanh SM Bike
@@ -17,3 +17,4 @@ def calculate_cost(X, T):
             return 2 * 30500 + 10 * 15500 + (X - 12) * 13800
     else:
         raise ValueError("Invalid")
+
